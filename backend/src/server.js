@@ -36,6 +36,9 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
   });
 }
+app.get("/", (req, res) => {
+  res.send("Server is running for SnapSync");
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
