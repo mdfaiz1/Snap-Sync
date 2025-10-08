@@ -7,7 +7,8 @@ import axios from "axios";
 //     : import.meta.env.VITE_API_URL;
 const BASE_URL =
   import.meta.env.MODE === "development"
-    ? "http://localhost:5000/api" // local backend for dev
+    ? // ? "http://localhost:5000/api" // local backend for dev
+      "https://snap-sync-backend.vercel.app/api" // local backend for dev
     : import.meta.env.VITE_API_URL ||
       "https://snap-sync-backend.vercel.app/api";
 
