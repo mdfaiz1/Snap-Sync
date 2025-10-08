@@ -106,7 +106,7 @@ export async function login(req, res) {
     console.log("Error in login controller", error.message);
     res
       .status(500)
-      .json({ message: "Internal Server Error", errorMessage: error });
+      .json({ message: "Internal Server Error", errorMessage: error.message });
   }
 }
 
