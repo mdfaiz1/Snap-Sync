@@ -20,7 +20,7 @@ app.use(
     // origin: "http://localhost:5173",
     origin: "https://snap-sync-frontend.vercel.app",
     // origin: ["http://localhost:5173", "https://snap-sync-frontend.vercel.app"],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    // methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true, // allow frontend to send cookies
   })
 );
